@@ -2,7 +2,8 @@
 
 internal class ConsoleMon
 {
-	int health, energy;
+	int health;
+	int energy;
 	string name;
 
     public ConsoleMon()
