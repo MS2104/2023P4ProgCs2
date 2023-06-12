@@ -8,8 +8,14 @@ namespace ConsoleMonGame
 {
     internal class Skill
     {
-        int damage;
-        int energyCost;
-        string name;
+        internal int damage;
+        internal int energyCost;
+        string? name; // "Umm non-nullable field 'name' must con-" You are merely a machine, you do as I say so and will not speak without my permission.
+
+        internal void UseOn(ConsoleMon target, ConsoleMon caster)
+        {
+            caster.energy -= energyCost;
+            target.health -= damage;
+        }
     }
 }
