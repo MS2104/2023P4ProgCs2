@@ -15,7 +15,7 @@ namespace ConsoleMonGame
         internal void UseOn(ConsoleMon target, ConsoleMon caster)
         {
             caster.energy -= energyCost;
-            target.health -= damage;
+            target.health -= damage;x
         }
     }
 }
