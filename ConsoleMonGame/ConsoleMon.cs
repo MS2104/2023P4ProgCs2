@@ -10,6 +10,8 @@ namespace ConsoleMonGame
 
 		private List<Skill>? skills; // At this point verklaar ik ze gwn nullable om die kut lijntjes weg te halen, sorry not sorry ¯\_(ツ)_/¯
 
+		internal Element weakness;
+
 		public void ConsoleMon2()
 		{
 			// whats poppin
@@ -22,8 +24,7 @@ namespace ConsoleMonGame
 
 		internal void DepleteEnergy(int energy)
 		{
-			this.energy -= 10;
+			this.energy -= 20;
 		}
 	}
-
 }
