@@ -26,6 +26,7 @@
                 Console.WriteLine("TestFactoryFunctions");
                 ConsoleMonFactory factory = new ConsoleMonFactory();
                 factory.Load("monsterdata.txt");
+                factory.Load("monsterdata.json");
             }
 
             TestConsoleMonFunctions();
