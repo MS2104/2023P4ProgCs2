@@ -29,8 +29,21 @@
                 factory.Load("monsterdata.json");
             }
 
+            static void TestConstructors()
+            {
+                Console.WriteLine("TestConstructors");
+                ConsoleMon mon = new ConsoleMon(200, 200, "ConsoleColorMon", Element.Earth);
+
+                Console.WriteLine(mon.energy == 200);
+                Console.WriteLine(mon.pokemonName == "ConsoleColorMon");
+                Console.WriteLine(mon.health == 200);
+                Console.WriteLine(mon.weakness == Element.Earth);
+
+            }
+
             TestConsoleMonFunctions();
             TestFactoryFunctions();
+            TestConstructors();
         }
     }
 }

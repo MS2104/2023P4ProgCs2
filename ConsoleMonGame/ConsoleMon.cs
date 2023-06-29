@@ -12,12 +12,22 @@ namespace ConsoleMonGame
 
 		internal Element weakness;
 
-		public void ConsoleMon2()
-		{
-			// whats poppin
-		}
+        public ConsoleMon()
+        {
 
-		internal void TakeDamage(int damage)
+        }
+
+        internal ConsoleMon(int health, int energy, string name, Element weakness)
+        {
+            //opdracht 13
+            this.energy = energy;
+            this.pokemonName = name;
+            this.weakness = weakness;
+            this.health = health;
+        }
+
+
+        internal void TakeDamage(int damage)
 		{
 			health -= damage;
 		}
