@@ -42,5 +42,38 @@ namespace ConsoleMonGame
 
             return templates;
         }
+
+        internal Skill CopySkill(Skill copyFrom)
+        {
+            Skill copyResult = new Skill();
+
+            copyResult.name = copyFrom.name;
+            copyResult.energyCost = copyFrom.energyCost;
+            copyResult.element = copyFrom.element;
+            copyResult.damage = copyFrom.damage;
+
+            return copyResult;
+        }
+
+        internal ConsoleMon CopyConsoleMon(ConsoleMon copyFrom)
+        {
+            ConsoleMon copyResult = new ConsoleMon();
+
+            copyResult.pokemonName = copyFrom.pokemonName;
+            copyResult.energy = copyFrom.energy;
+            copyResult.health = copyFrom.health;
+            copyResult.weakness = copyFrom.weakness;
+            copyResult.skills = new List<Skill>();
+            foreach (Skill skill in copyFrom.skills)
+            {
+                Skill nskill = new Skill();
+                nskill.element = skill.element;
+                nskill.damage = skill.damage;
+                nskill.name = skill.name;
+                nskill.energyCost = skill.energyCost;
+                copyResult.skills.Add(nskill);
+            }
+            return copyResult;
+        }
     }
 }

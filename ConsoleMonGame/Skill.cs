@@ -35,5 +35,20 @@ namespace ConsoleMonGame
              * Ik ben echt zo extreem intelligent. 
              */
         }
+
+        public Skill()
+        {
+
+        }
+
+        internal Skill (int damage, int energyCost, string name, Element element)
+        {
+            this.damage = damage;
+            this.energyCost = energyCost;
+            this.name = name;
+            this.element = element;
+
+            // Co-pilot my beloved <3
+        }   
     }
 }

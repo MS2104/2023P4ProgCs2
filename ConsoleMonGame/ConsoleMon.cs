@@ -8,9 +8,9 @@ namespace ConsoleMonGame
 		public int energy;
 		public string? pokemonName; // "Umm non-nullable field 'name' must con-" SHUT UUUUUUUUUUUUUUUP
 
-		private List<Skill>? skills; // At this point verklaar ik ze gwn nullable om die kut lijntjes weg te halen, sorry not sorry ¯\_(ツ)_/¯
+        public List<Skill> skills; // At this point verklaar ik ze gwn nullable om die kut lijntjes weg te halen, sorry not sorry ¯\_(ツ)_/¯
 
-		internal Element weakness;
+        internal Element weakness;
 
         public ConsoleMon()
         {
