@@ -7,8 +7,9 @@
             TestConsoleMonFunctions();
             TestFactoryFunctions();
             TestConstructors();
-            //TestCopySkill(); // Object reference not set to an instance of an object. Zie lijn 62.
+            TestCopySkill();
             TestCopyConsoleMon();
+            TestArena();
         }
 
         static void TestConsoleMonFunctions()
@@ -86,6 +87,21 @@
             copy.skills[0].name = "newskill";
             Console.WriteLine(copy.pokemonName != copyFrom.pokemonName);
             Console.WriteLine(copy.skills[0].name != copyFrom.skills[0].name);
+        }
+
+        static void TestArena()
+        {
+            Console.WriteLine("TestArena");
+
+            ConsoleMonFactory factory = new ConsoleMonFactory();
+            List<ConsoleMon> templates = factory.LoadJson("monsterdata.json");
+
+            Arena arena = new Arena();
+            ConsoleMon fighterA = templates[0];
+            ConsoleMon fighterB = templates[1];
+
+            arena.Fight(fighterA, fighterB);
+            Console.ReadKey();
         }
     }
 }

@@ -49,6 +49,6 @@ namespace ConsoleMonGame
             this.element = element;
 
             // Co-pilot my beloved <3
-        }   
+        }
     }
 }

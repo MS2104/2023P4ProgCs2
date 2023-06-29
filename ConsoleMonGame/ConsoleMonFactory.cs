@@ -35,7 +35,7 @@ namespace ConsoleMonGame
 
         internal List<ConsoleMon> LoadJson(string datafile)
         {
-            string json = File.ReadAllText("monsterdata.json");
+            string json = File.ReadAllText("C:\\School M3\\2023P4ProgCs2\\ConsoleMonGame\\monsterdata.json");
 
             List<ConsoleMon> templates = JsonSerializer.Deserialize<List<ConsoleMon>>(json);
             Console.WriteLine(templates[0].pokemonName);

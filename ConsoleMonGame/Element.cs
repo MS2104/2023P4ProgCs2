@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleMonGame
 {
-    internal enum Element
+    public enum Element
     {
         Fire, Earth, Water, Wind, Physical
     }

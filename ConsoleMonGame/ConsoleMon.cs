@@ -4,11 +4,11 @@ namespace ConsoleMonGame
 {
 	internal class ConsoleMon
 	{
-		public int health;
-		public int energy;
-		public string? pokemonName; // "Umm non-nullable field 'name' must con-" SHUT UUUUUUUUUUUUUUUP
+		public int health {  get; set; }
+		public int energy { get; set; }
+		public string? pokemonName { get; set; } // "Umm non-nullable field 'name' must con-" SHUT UUUUUUUUUUUUUUUP
 
-        public List<Skill> skills; // At this point verklaar ik ze gwn nullable om die kut lijntjes weg te halen, sorry not sorry ¯\_(ツ)_/¯
+        public List<Skill> skills { get; set; } // At this point verklaar ik ze gwn nullable om die kut lijntjes weg te halen, sorry not sorry ¯\_(ツ)_/¯
 
         internal Element weakness;
 
